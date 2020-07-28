@@ -1,11 +1,12 @@
-# markdownify-cli
+# markdownify-usemod
 
 Convert a UseModWiki website to static markdown files.
 
 This is a tweaked version of
-[mardownify-usemod](https://github.com/sempostma/markdownify-cli),
+[mardownify-cli](https://github.com/sempostma/markdownify-cli),
 to:
-- convert usemod wiki links to HTML/markdown links
+- properly detect the filename of a UseMod wiki page
+- convert UseMod wiki links to HTML/markdown links
 
 ## Install
 
