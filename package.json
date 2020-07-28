@@ -3,7 +3,12 @@
   "version": "1.0.4",
   "description": "Convert a website to static markdown.",
   "main": "index.js",
-  "keywords": ["markdown", "yaml", "frontmatter", "crawler"],
+  "keywords": [
+    "markdown",
+    "yaml",
+    "frontmatter",
+    "crawler"
+  ],
   "scripts": {},
   "bin": {
     "markdownify": "bin/index.js"

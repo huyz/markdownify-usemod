@@ -1,16 +1,24 @@
 # markdownify-cli
-Convert a website to static markdown.
+
+Convert a UseModWiki website to static markdown files.
+
+This is a tweaked version of
+[mardownify-usemod](https://github.com/sempostma/markdownify-cli),
+to:
+- convert usemod wiki links to HTML/markdown links
 
 ## Install
 
 ```bash
-npm i -g markdownify-cli
+git clone https://github.com/huyz/markdownify-usemod.git
+cd markdownify-usemod
+npm install
 ```
 
 ## Usage
 
 ```bash
-markdownify process -h
+node ./bin/index.js process -h
 # Usage: process [options] [urls...]
 
 # Options:
@@ -22,6 +30,12 @@ markdownify process -h
 #  -f, --frontmatter                        Include some common front matter entries in YAML format.
 #  -h, --help                               output usage information
 ```
+
+Example:
+```bash
+node ./bin/index.js process --root '.wikibody' --crawl --out site_out http://wiki.ofb.net/
+```
+
 ## Options
 
 --out: The absolute or relative output directory
